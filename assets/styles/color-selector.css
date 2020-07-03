@@ -1,0 +1,44 @@
+.color-selector {
+    /* visibility: hidden; */
+    position: relative;
+    margin: 1rem;
+}
+.color-selector:after {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    margin: 1rem;
+    
+    top: -25px;
+    left: -25px;
+    position: absolute;
+    content: '';
+    visibility: visible;
+    border: 4px solid white;
+}
+
+.color-selector:checked:after {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    margin: 1rem;
+    
+    top: -25px;
+    left: -25px;
+    
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid #78a1bb;
+    /* border: none; */
+}
+.pink:after {
+    background-color: pink!important;
+}
+.green:after {
+    background-color: green;
+}
+.blue:after {
+    background-color: blue;
+}
